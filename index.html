@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>카페 비미 BIMI — 광주 동명동 필터커피·수제디저트</title>
+<meta name="description" content="광주 동명동 카페 비미(BIMI). 원두 본연의 향을 살린 필터커피와 매일 만드는 수제 디저트, 디자이너 오브제와 자연광이 머무는 감성 공간.">
+<meta name="theme-color" content="#C0533F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="카페 비미 BIMI — 광주 동명동 필터커피·수제디저트">
+<meta property="og:description" content="아름다운 맛과 머무름의 가치. 필터커피와 수제 디저트가 있는 동명동 감성 카페.">
+<meta property="og:image" content="https://bimi-sample.lgt3232.workers.dev/og-bimi.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://bimi-sample.lgt3232.workers.dev/">
+<meta property="og:site_name" content="카페 비미 BIMI">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bimi-sample.lgt3232.workers.dev/og-bimi.jpg">
+<link rel="canonical" href="https://bimi-sample.lgt3232.workers.dev/">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"카페 비미","alternateName":"BIMI","description":"광주 동명동의 필터커피·수제디저트 감성 카페.","image":"https://bimi-sample.lgt3232.workers.dev/bimi-sp-hero.webp","url":"https://bimi-sample.lgt3232.workers.dev/","telephone":"+82-70-7537-0480","servesCuisine":["Coffee","Dessert","Cafe"],"priceRange":"₩₩","address":{"@type":"PostalAddress","streetAddress":"동계로10번길 16 1층","addressLocality":"광주광역시 동구","addressCountry":"KR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:00","closes":"23:00"}]}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+ --bg:#F4EEDF; --bg2:#ECE2CE; --card:#FBF7EC;
+ --ink:#2E2A24; --ink2:#6E655A; --faint:#A99E8C;
+ --red:#C0533F; --red-d:#A5412E; --yellow:#E0AE3F; --ochre-d:#9A6E1E;
+ --sage:#8C9E77; --blue:#7E93AB; --brown:#8A6A50;
+ --line:#E1D6BF;
+ --sans:'Inter',system-ui,-apple-system,sans-serif;
+ --kr:'Pretendard Variable',Pretendard,system-ui,sans-serif;
+ --hand:'Caveat',cursive;
+ --bar:66px; --ease:cubic-bezier(.22,.61,.36,1);
+}
+html{color-scheme:light;-webkit-text-size-adjust:100%;scroll-behavior:auto;scroll-padding-top:80px;overflow-x:hidden}
+body{font-family:var(--kr);color:var(--ink);background:var(--bg);line-height:1.72;word-break:keep-all;overflow-wrap:break-word;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:relative}
+/* 색연필/노이즈 그레인 */
+body::before{content:"";position:fixed;inset:0;z-index:2000;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 26px;position:relative}
+.wrap-s{max-width:760px}
+section{position:relative}
+::selection{background:var(--red);color:#fff}
+h1,h2,h3{font-weight:700;line-height:1.18;letter-spacing:-.01em}
+.en{font-family:var(--sans)}
+.hand{font-family:var(--hand)}
+
+/* doodles */
+.doodle{position:absolute;pointer-events:none;z-index:1}
+.doodle svg{width:100%;height:100%;display:block;overflow:visible}
+
+/* eyebrow (handwriting accent) */
+.eyebrow{font-family:var(--hand);font-size:1.5rem;color:var(--red);line-height:1;display:inline-block}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--kr);font-weight:600;font-size:.96rem;padding:12px 24px;border-radius:999px;transition:transform .18s var(--ease),background .2s,color .2s,border-color .2s}
+.btn svg{width:17px;height:17px}
+.btn-fill{background:var(--red);color:#fff}
+.btn-fill:hover{transform:translateY(-2px);background:var(--red-d)}
+.btn-ol{background:transparent;color:var(--red-d);border:1.6px solid var(--red)}
+.btn-ol:hover{background:var(--red);color:#fff;transform:translateY(-2px)}
+
+/* ---------- header ---------- */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .35s var(--ease),box-shadow .35s,border-color .35s}
+.hdr-in{height:var(--bar);display:flex;align-items:center;justify-content:space-between;padding:0 26px;max-width:1220px;margin:0 auto}
+.brand img{height:30px;width:auto}
+.nav-lnk{display:flex;gap:26px}
+.nav-lnk a{font-family:var(--kr);font-size:.95rem;font-weight:500;color:var(--ink);opacity:.82;transition:color .2s,opacity .2s}
+.nav-lnk a:hover{color:var(--red);opacity:1}
+.hdr.scrolled{background:rgba(244,238,223,.94);border-bottom:1px solid var(--line)}
+.burger{display:none;flex-direction:column;gap:5px;width:30px;height:30px;justify-content:center;align-items:center;background:none;border:0;cursor:pointer}
+.burger span{display:block;width:22px;height:2px;border-radius:2px;background:var(--ink);transition:.3s}
+.drawer{position:fixed;inset:0;z-index:70;background:var(--red);color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+.drawer.open{opacity:1;visibility:visible}
+.drawer a{font-family:var(--sans);font-weight:600;font-size:1.9rem;color:#fff;padding:8px}
+.drawer .dx{position:absolute;top:18px;right:24px;font-size:2rem;background:none;border:0;color:#fff;cursor:pointer;line-height:1}
+.drawer .dn{margin-top:14px;font-family:var(--kr);font-size:1rem;font-weight:600;background:#fff;color:var(--red-d);border-radius:999px;padding:10px 24px}
+
+/* ---------- hero ---------- */
+.hero{padding:calc(var(--bar) + 34px) 0 clamp(40px,6vw,72px);position:relative;overflow:hidden}
+.hero-in{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.hero-word{width:min(78%,420px);margin-bottom:20px}
+.hero h1{font-family:var(--kr);font-weight:800;font-size:clamp(1.9rem,4.6vw,3rem);letter-spacing:-.02em;line-height:1.24}
+.hero h1 b{color:var(--red);font-weight:800}
+.hero .lead{margin-top:18px;font-size:clamp(1rem,1.6vw,1.12rem);color:var(--ink2);max-width:30em}
+.hero-cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.hero-media{position:relative}
+.hero-media .ph{position:relative;border-radius:10px;overflow:hidden;background:var(--bg2);aspect-ratio:4/5;box-shadow:0 18px 44px -22px rgba(70,50,30,.4)}
+.hero-media .ph img{width:100%;height:100%;object-fit:cover}
+.hero-media .tape{position:absolute;top:-12px;left:26px;transform:rotate(-5deg);width:104px;height:26px;background:rgba(224,174,63,.34);border:1px dashed rgba(154,110,30,.4);z-index:2}
+
+/* section head */
+.sec{padding:clamp(60px,9vw,116px) 0}
+.sec-head{max-width:640px;margin-bottom:clamp(30px,4vw,50px)}
+.sec-head .eyebrow{margin-bottom:8px}
+.sec-head h2{font-family:var(--kr);font-weight:800;font-size:clamp(1.7rem,4vw,2.5rem);letter-spacing:-.02em}
+.sec-head h2 .en{font-family:var(--sans);font-weight:700}
+.sec-head p{margin-top:14px;color:var(--ink2);max-width:40em}
+
+/* ---------- about ---------- */
+.about{background:var(--bg)}
+.about-in{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,68px);align-items:center}
+.about-txt h2{font-family:var(--kr);font-weight:800;font-size:clamp(1.6rem,3.6vw,2.3rem);letter-spacing:-.02em;line-height:1.3;margin-bottom:16px}
+.about-txt h2 b{color:var(--red)}
+.about-txt p{color:var(--ink2);margin-bottom:14px}
+.about-txt p:last-child{margin-bottom:0}
+.about-card{position:relative;background:var(--card);border-radius:10px;padding:14px;box-shadow:0 14px 40px -22px rgba(70,50,30,.42);transform:rotate(1.4deg)}
+.about-card img{width:100%;border-radius:6px;display:block}
+.about-card .cap{font-family:var(--hand);font-size:1.3rem;color:var(--red-d);text-align:center;padding:8px 0 4px}
+
+/* ---------- menu ---------- */
+.menu{background:var(--bg2)}
+.mcols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,5vw,60px)}
+.mcat h3{font-family:var(--sans);font-weight:700;font-size:1.2rem;letter-spacing:.01em;color:var(--ink);display:flex;align-items:baseline;gap:10px;padding-bottom:10px;margin-bottom:6px;border-bottom:2px solid var(--red)}
+.mcat h3 .kr{font-family:var(--kr);font-weight:600;font-size:.9rem;color:var(--ink2)}
+.mrow{display:flex;align-items:baseline;gap:10px;padding:11px 0;border-bottom:1px dotted var(--line)}
+.mrow:last-child{border-bottom:0}
+.mrow .nm{font-family:var(--kr);font-weight:600;font-size:1rem;color:var(--ink)}
+.mrow .nm small{display:block;font-weight:400;font-size:.82rem;color:var(--ink2);margin-top:2px;letter-spacing:0}
+.mrow .nm .sig{font-family:var(--hand);font-size:1.1rem;color:var(--red-d);margin-left:6px}
+.mrow .dots{flex:1;border-bottom:1px dotted var(--faint);min-width:14px;transform:translateY(-4px)}
+.mrow .pr{font-family:var(--sans);font-weight:600;font-size:1rem;color:var(--red-d);white-space:nowrap}
+.mnote{margin-top:14px;font-size:.85rem;color:var(--ink2)}
+.mphotos{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.6vw,16px);margin-top:clamp(30px,4vw,46px)}
+.mphotos figure{position:relative;border-radius:8px;overflow:hidden;background:var(--card)}
+.mphotos img{width:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .6s var(--ease)}
+@media(hover:hover){.mphotos figure:hover img{transform:scale(1.05)}}
+.mphotos figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px 10px 8px;font-family:var(--kr);font-weight:600;font-size:.8rem;color:#fff;background:linear-gradient(to top,rgba(46,42,36,.72),transparent)}
+.mphotos figcaption span{font-family:var(--sans);opacity:.9}
+
+/* ---------- space ---------- */
+.space{background:var(--bg)}
+.sgrid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(12px,1.6vw,18px);grid-auto-flow:dense}
+.sgrid figure{position:relative;border-radius:9px;overflow:hidden;background:var(--bg2)}
+.sgrid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s var(--ease)}
+@media(hover:hover){.sgrid figure:hover img{transform:scale(1.045)}}
+.c4{grid-column:span 4}.c5{grid-column:span 5}.c6{grid-column:span 6}.c7{grid-column:span 7}.c8{grid-column:span 8}
+.rt{aspect-ratio:4/5}.rw{aspect-ratio:3/2}.rq{aspect-ratio:1/1}
+
+/* ---------- visit ---------- */
+.visit{background:var(--bg2)}
+.visit-in{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,60px);align-items:start}
+.vcard{background:var(--card);border-radius:10px;padding:clamp(24px,3vw,38px);box-shadow:0 12px 34px -22px rgba(70,50,30,.4)}
+.vrow{display:flex;gap:14px;padding:15px 0;border-bottom:1px dotted var(--line)}
+.vrow:last-of-type{border-bottom:0}
+.vrow .k{font-family:var(--sans);font-weight:700;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--red);width:74px;flex-shrink:0;padding-top:3px}
+.vrow .v{font-size:.98rem;color:var(--ink);line-height:1.66;min-width:0}
+.vrow .v .sub{color:var(--ink2);font-size:.88rem}
+.vbtns{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+.visit-media{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:4/5;background:var(--bg);box-shadow:0 14px 38px -22px rgba(70,50,30,.4)}
+.visit-media img{width:100%;height:100%;object-fit:cover}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#EFE7D6;padding:clamp(46px,7vw,74px) 0 90px;position:relative;overflow:hidden}
+.foot-in{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start}
+.foot-brand img{height:34px;filter:brightness(0) invert(1);opacity:.92;margin-bottom:12px}
+.foot-brand p{font-size:.9rem;color:#B7AE9C;line-height:1.8;max-width:24em}
+.foot-links{display:flex;gap:26px;flex-wrap:wrap}
+.foot-links a{font-family:var(--sans);font-size:.86rem;color:#EFE7D6;opacity:.86;border-bottom:1px solid transparent;transition:.2s;padding-bottom:2px}
+.foot-links a:hover{opacity:1;border-bottom-color:var(--yellow)}
+.foot-cr{margin-top:30px;font-family:var(--sans);font-size:.78rem;color:#8B8271}
+
+/* quickbar mobile */
+.qbar{display:none}
+/* reveal */
+.rv{opacity:1}
+@media (min-width:861px){
+ html.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+ html.js .rv.in{opacity:1;transform:none}
+}
+@media (max-width:900px){
+ .hero-in{grid-template-columns:1fr;gap:34px}
+ .hero-media{max-width:420px}
+ .about-in,.visit-in{grid-template-columns:1fr;gap:26px}
+}
+@media (max-width:860px){
+ .nav-lnk{display:none}
+ .burger{display:flex}
+ .mcols{grid-template-columns:1fr;gap:24px}
+ .mphotos{grid-template-columns:repeat(2,1fr)}
+ .c4,.c5,.c6,.c7,.c8{grid-column:span 6}
+ .qbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:55;gap:8px;padding:9px 12px calc(9px + env(safe-area-inset-bottom));background:var(--card);border-top:1px solid var(--line)}
+ .qbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;font-family:var(--kr);font-weight:600;font-size:.92rem;padding:11px 0;border-radius:11px}
+ .qbar .q-call{background:var(--bg2);color:var(--ink)}
+ .qbar .q-map{background:var(--red);color:#fff}
+ .qbar svg{width:16px;height:16px}
+ body{padding-bottom:62px}
+ .doodle.hide-mo{display:none}
+}
+@media (max-width:520px){.c4,.c5,.c6,.c7,.c8{grid-column:span 12}.wrap{padding:0 20px}}
+a:focus-visible,button:focus-visible{outline:2.5px solid var(--red);outline-offset:3px;border-radius:4px}
+footer a:focus-visible,.drawer a:focus-visible{outline-color:#fff}
+@media (hover:none){.btn:hover{transform:none}}
+</style>
+<noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
+<script>document.documentElement.className+=' js';</script>
+</head>
+<body>
+<!-- ===== HEADER ===== -->
+<header class="hdr" id="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="#top" aria-label="카페 비미 홈"><img src="bimi-word.png" alt="카페 비미 BIMI"></a>
+    <nav class="nav-lnk" aria-label="주요 메뉴">
+      <a href="#about">소개</a>
+      <a href="#menu">메뉴</a>
+      <a href="#space">공간</a>
+      <a href="#visit">오시는 길</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="drawer" id="drawer">
+  <button class="dx" id="dx" aria-label="메뉴 닫기">&times;</button>
+  <a href="#about">소개</a>
+  <a href="#menu">메뉴</a>
+  <a href="#space">공간</a>
+  <a href="#visit">오시는 길</a>
+  <a class="dn" href="https://map.naver.com/p/entry/place/1404651453" target="_blank" rel="noopener">네이버 지도</a>
+</div>
+<span id="top"></span>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <img class="hero-word" src="bimi-word.png" alt="카페 비미 BIMI">
+      <h1>아름다운 맛과 머무름이<br><b>머무는 감성 공간</b></h1>
+      <p class="lead">광주 동명동의 고즈넉한 골목. 원두 본연의 향을 살린 필터커피와 매일 만드는 수제 디저트로, 일상 속 작은 선물을 건네요.</p>
+      <div class="hero-cta">
+        <a class="btn btn-fill" href="#menu">메뉴 보기</a>
+        <a class="btn btn-ol" href="https://map.naver.com/p/entry/place/1404651453" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>
+          오시는 길
+        </a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <span class="doodle hide-mo" style="right:-6px;top:-30px;width:52px;height:48px;color:var(--sage)" aria-hidden="true"><svg viewBox="0 0 40 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 42V18"/><path d="M20 24c-6 0-11-4-11-11 6 0 11 4 11 11z"/><path d="M20 20c5 0 9-3 9-9-5 0-9 3-9 9z"/></svg></span>
+      <div class="ph"><span class="tape"></span><img src="bimi-sp-hero.webp" alt="자연광이 드는 카페 비미 내부 — 식물과 디자이너 가구" fetchpriority="high"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="sec about" id="about">
+  <div class="wrap about-in">
+    <div class="about-txt rv">
+      <span class="eyebrow">a small, warm place</span>
+      <h2>커피를 마시는 공간을 넘어,<br><b>머무름의 가치</b>를 전해요</h2>
+      <p>비미의 문을 열고 들어서면, 다양한 디자이너의 오브제와 감각적인 가구가 조화롭게 놓인 풍경을 마주해요. 매장 가득 스며드는 따스한 자연광이 차분한 인테리어와 어우러져, 일상의 복잡함을 잠시 잊게 해주는 힐링 스팟이 되어줍니다.</p>
+      <p>혼자만의 여유에는 몰입의 즐거움을, 소중한 사람과의 시간에는 다정한 분위기를. 어느 자리에 앉아도 비미가 추구하는 아름다움을 온전히 느끼실 수 있어요.</p>
+    </div>
+    <figure class="about-card rv">
+      <img src="bimi-card.webp" alt="비미의 손그림 일러스트 — 커피와 디저트, 식물이 담긴 그림">
+      <figcaption class="cap">take your time ✿</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== MENU ===== -->
+<section class="sec menu" id="menu">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">gently sweet</span>
+      <h2>비미의 <span class="en">menu</span></h2>
+      <p>매일 아침 신선하게 준비하는 수제 디저트와, 원두 본연의 향을 섬세하게 살린 필터커피. 계절마다 제철 재료로 시즌 메뉴가 달라져요.</p>
+    </div>
+    <div class="mcols">
+      <div class="mcat rv">
+        <h3>Hand Drip <span class="kr">핸드드립 커피</span></h3>
+        <div class="mrow"><span class="nm">Panama Altieri Rola Catuai <small>포도·와이니·히비스커스·믹스베리</small></span><span class="dots"></span><span class="pr">9,500</span></div>
+        <div class="mrow"><span class="nm">BIMI Blend <span class="sig">signature</span><small>베리 뉘앙스·월넛·피칸·카라멜</small></span><span class="dots"></span><span class="pr">6,000</span></div>
+        <div class="mrow"><span class="nm">Ethiopia Basha Bekele Bode <small>블루베리·딸기·플로럴</small></span><span class="dots"></span><span class="pr">8,000</span></div>
+        <div class="mrow"><span class="nm">Ethiopia Worka Sakaro <small>플로럴·베르가못·천도복숭아</small></span><span class="dots"></span><span class="pr">8,000</span></div>
+        <div class="mrow"><span class="nm">India Azad Hind <small>누룽지·참깨·곡물·흑설탕</small></span><span class="dots"></span><span class="pr">7,000</span></div>
+        <div class="mrow"><span class="nm">Colombia El Paraiso (Decaf) <small>리치·복숭아·브라운슈거</small></span><span class="dots"></span><span class="pr">8,000</span></div>
+        <h3 style="margin-top:30px">Drinks <span class="kr">음료</span></h3>
+        <div class="mrow"><span class="nm">아메리카노</span><span class="dots"></span><span class="pr">4,500</span></div>
+        <div class="mrow"><span class="nm">아포가토</span><span class="dots"></span><span class="pr">6,500</span></div>
+        <div class="mrow"><span class="nm">호지 바닐라 라떼</span><span class="dots"></span><span class="pr">7,000</span></div>
+        <div class="mrow"><span class="nm">루바브 에이드</span><span class="dots"></span><span class="pr">7,000</span></div>
+        <div class="mrow"><span class="nm">블루베리 에이드</span><span class="dots"></span><span class="pr">7,000</span></div>
+        <div class="mrow"><span class="nm">바이올렛</span><span class="dots"></span><span class="pr">7,000</span></div>
+        <div class="mrow"><span class="nm">매하</span><span class="dots"></span><span class="pr">6,500</span></div>
+      </div>
+      <div class="mcat rv">
+        <h3>Dessert <span class="kr">디저트</span></h3>
+        <div class="mrow"><span class="nm">복숭아 파르페 <span class="sig">signature</span></span><span class="dots"></span><span class="pr">12,000</span></div>
+        <div class="mrow"><span class="nm">밀푀유</span><span class="dots"></span><span class="pr">9,500</span></div>
+        <div class="mrow"><span class="nm">파리 브레스트</span><span class="dots"></span><span class="pr">8,500</span></div>
+        <div class="mrow"><span class="nm">밤 초코 몽블랑</span><span class="dots"></span><span class="pr">8,500</span></div>
+        <div class="mrow"><span class="nm">산딸기 몽블랑</span><span class="dots"></span><span class="pr">8,000</span></div>
+        <div class="mrow"><span class="nm">바니 무스케이크</span><span class="dots"></span><span class="pr">8,500</span></div>
+        <div class="mrow"><span class="nm">휘그</span><span class="dots"></span><span class="pr">8,500</span></div>
+        <div class="mrow"><span class="nm">베리아쥬</span><span class="dots"></span><span class="pr">6,500</span></div>
+        <h3 style="margin-top:30px">Gift <span class="kr">선물·단체</span></h3>
+        <div class="mrow"><span class="nm">비미 구움과자 세트 <small>답례품·단체주문 문의</small></span><span class="dots"></span><span class="pr">변동</span></div>
+        <div class="mrow"><span class="nm">디저트 선물세트</span><span class="dots"></span><span class="pr">변동</span></div>
+        <div class="mrow"><span class="nm">비미 페어링 <small>커피 + 디저트 코스</small></span><span class="dots"></span><span class="pr">변동</span></div>
+        <p class="mnote">* 결혼 답례품·기업 행사 등 단체 주문은 매장으로 문의해 주세요.</p>
+      </div>
+    </div>
+    <div class="mphotos rv">
+      <figure><img src="bimi-m-parfait.webp" alt="복숭아 파르페" loading="lazy"><figcaption>복숭아 파르페 <span>12,000</span></figcaption></figure>
+      <figure><img src="bimi-m-millefeuille.webp" alt="밀푀유" loading="lazy"><figcaption>밀푀유 <span>9,500</span></figcaption></figure>
+      <figure><img src="bimi-m-parisbrest.webp" alt="파리 브레스트" loading="lazy"><figcaption>파리 브레스트 <span>8,500</span></figcaption></figure>
+      <figure><img src="bimi-m-montblanc.webp" alt="밤 초코 몽블랑" loading="lazy"><figcaption>밤 초코 몽블랑 <span>8,500</span></figcaption></figure>
+      <figure><img src="bimi-m-affogato.webp" alt="아포가토" loading="lazy"><figcaption>아포가토 <span>6,500</span></figcaption></figure>
+      <figure><img src="bimi-m-hojicha.webp" alt="호지 바닐라 라떼" loading="lazy"><figcaption>호지 바닐라 라떼 <span>7,000</span></figcaption></figure>
+      <figure><img src="bimi-m-rhubarb.webp" alt="루바브 에이드" loading="lazy"><figcaption>루바브 에이드 <span>7,000</span></figcaption></figure>
+      <figure><img src="bimi-m-violet.webp" alt="바이올렛" loading="lazy"><figcaption>바이올렛 <span>7,000</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPACE ===== -->
+<section class="sec space" id="space">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="doodle hide-mo" style="left:-6px;top:-30px;width:46px;height:42px;color:var(--red)" aria-hidden="true"><svg viewBox="0 0 44 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 16h24v10a8 8 0 0 1-8 8H16a8 8 0 0 1-8-8z"/><path d="M32 19h4a4 4 0 0 1 0 8h-4"/><path d="M14 10c0-3 3-3 3-6M22 10c0-3 3-3 3-6"/></svg></span>
+      <span class="eyebrow">for moments worth sharing</span>
+      <h2>비미의 <span class="en">space</span></h2>
+      <p>디자이너의 감각과 자연광이 어우러진 동명동 감성 공간. 조용히 흐르는 음악과 향긋한 커피 향이 함께해요.</p>
+    </div>
+    <div class="sgrid">
+      <figure class="c7 rw rv"><img src="bimi-sp-chairs.webp" alt="자연광이 드는 창가와 붉은 디자이너 체어" loading="lazy"></figure>
+      <figure class="c5 rt rv"><img src="bimi-sp-turntable.webp" alt="턴테이블과 꽃이 놓인 대리석 테이블" loading="lazy"></figure>
+      <figure class="c5 rt rv"><img src="bimi-ds-cakes.webp" alt="비미의 수제 케이크와 디저트" loading="lazy"></figure>
+      <figure class="c7 rw rv"><img src="bimi-sp-counter.webp" alt="바 카운터와 빈티지 오디오" loading="lazy"></figure>
+      <figure class="c4 rq rv"><img src="bimi-sp-door.webp" alt="KAFE BIMI 스테인드글라스 문" loading="lazy"></figure>
+      <figure class="c4 rq rv"><img src="bimi-ds-case.webp" alt="디저트 쇼케이스" loading="lazy"></figure>
+      <figure class="c4 rq rv"><img src="bimi-sp-terrace.webp" alt="나무 그늘이 드리운 야외 테라스 자리" loading="lazy"></figure>
+      <figure class="c6 rw rv"><img src="bimi-sp-store.webp" alt="카페 비미 외관" loading="lazy"></figure>
+      <figure class="c6 rw rv"><img src="bimi-ds-peach.webp" alt="복숭아를 올린 시그니처 디저트" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VISIT ===== -->
+<section class="sec visit" id="visit">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">come by</span>
+      <h2>오시는 <span class="en">길</span></h2>
+    </div>
+    <div class="visit-in">
+      <div class="vcard rv">
+        <div class="vrow"><div class="k">Address</div><div class="v">광주광역시 동구 동계로10번길 16, 1층<br><span class="sub">문화전당역 4번 출구에서 약 939m · 동명동</span></div></div>
+        <div class="vrow"><div class="k">Hours</div><div class="v">매일 11:00 – 23:00<br><span class="sub">연중무휴 · 휴무는 인스타그램 공지</span></div></div>
+        <div class="vrow"><div class="k">Parking</div><div class="v"><span class="sub">동명동 제2공영주차장(동명동 181-5) 바로 옆 건물로 주차가 편리해요. ACC 부설주차장 이용 시 1시간 무료 주차권을 드리니 방문 때 말씀해 주세요.</span></div></div>
+        <div class="vrow"><div class="k">Tel</div><div class="v"><a href="tel:070-7537-0480" style="color:var(--red-d);font-weight:600">070-7537-0480</a></div></div>
+        <div class="vbtns">
+          <a class="btn btn-fill" href="https://map.naver.com/p/entry/place/1404651453" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>
+            네이버 지도
+          </a>
+          <a class="btn btn-ol" href="https://www.instagram.com/bimi_jeonju/" target="_blank" rel="noopener">인스타그램</a>
+        </div>
+      </div>
+      <div class="visit-media rv"><img src="bimi-sp-store.webp" alt="카페 비미 외관 — 동명동"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <img src="bimi-word.png" alt="카페 비미 BIMI">
+      <p>아름다운 맛과 세심한 정성이 머무는 감성 공간.<br>광주 동명동 카페 비미.</p>
+    </div>
+    <nav class="foot-links" aria-label="바로가기">
+      <a href="#about">소개</a>
+      <a href="#menu">메뉴</a>
+      <a href="#space">공간</a>
+      <a href="https://map.naver.com/p/entry/place/1404651453" target="_blank" rel="noopener">네이버 지도</a>
+      <a href="https://www.instagram.com/bimi_jeonju/" target="_blank" rel="noopener">인스타그램</a>
+      <a href="tel:070-7537-0480">070-7537-0480</a>
+    </nav>
+  </div>
+  <div class="wrap"><p class="foot-cr">광주광역시 동구 동계로10번길 16, 1층 · 매일 11:00–23:00 · © 2026 카페 비미 BIMI</p></div>
+</footer>
+
+<div class="qbar">
+  <a class="q-call" href="tel:070-7537-0480"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>전화</a>
+  <a class="q-map" href="https://map.naver.com/p/entry/place/1404651453" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>네이버 지도</a>
+</div>
+
+<noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
+<script>
+(function(){
+  var hdr=document.getElementById('hdr'),tick=false;
+  function sc(){if(tick)return;tick=true;requestAnimationFrame(function(){hdr.classList.toggle('scrolled',window.scrollY>36);tick=false;});}
+  window.addEventListener('scroll',sc,{passive:true});sc();
+  var b=document.getElementById('burger'),dr=document.getElementById('drawer'),dx=document.getElementById('dx');
+  function op(){dr.classList.add('open');b.setAttribute('aria-expanded','true');}
+  function cl(){dr.classList.remove('open');b.setAttribute('aria-expanded','false');}
+  b.addEventListener('click',op);dx.addEventListener('click',cl);
+  dr.querySelectorAll('a').forEach(function(a){a.addEventListener('click',cl);});
+  if(window.matchMedia('(min-width:861px)').matches){
+    var els=[].slice.call(document.querySelectorAll('.rv'));
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.08,rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(el){io.observe(el);});
+    setTimeout(function(){els.forEach(function(el){el.classList.add('in');});},2200);
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length<2)return;var t=document.querySelector(id);if(!t)return;e.preventDefault();var y=t.getBoundingClientRect().top+window.scrollY-66,st=window.scrollY,d=y-st,t0=null;
+    function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/620,1);var e2=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;window.scrollTo(0,st+d*e2);if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);});
+  });
+})();
+</script>
+</body>
+</html>
