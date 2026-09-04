@@ -1,0 +1,9 @@
+.git
+.git/**
+img
+img/**
+*.md
+CHANGELOG.md
+STRUCTURE.md
+bimi-m-americano.webp
+bimi-m-fig.webp
