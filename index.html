@@ -26,16 +26,16 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"카페 비미","alternateName":"BIMI","description":"광주 동명동의 필터커피·수제디저트 감성 카페.","image":"https://bimi-sample.lgt3232.workers.dev/bimi-sp-hero.webp","url":"https://bimi-sample.lgt3232.workers.dev/","telephone":"+82-70-7537-0480","servesCuisine":["Coffee","Dessert","Cafe"],"priceRange":"₩₩","address":{"@type":"PostalAddress","streetAddress":"동계로10번길 16 1층","addressLocality":"광주광역시 동구","addressCountry":"KR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:00","closes":"23:00"}]}
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"카페 비미","alternateName":"BIMI","description":"광주 동명동의 필터커피·수제디저트 감성 카페.","image":"https://bimi-sample.lgt3232.workers.dev/bimi-gw-hero.webp","url":"https://bimi-sample.lgt3232.workers.dev/","telephone":"+82-70-7537-0480","servesCuisine":["Coffee","Dessert","Cafe"],"priceRange":"₩₩","address":{"@type":"PostalAddress","streetAddress":"동계로10번길 16 1층","addressLocality":"광주광역시 동구","addressCountry":"KR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:00","closes":"23:00"}]}
 </script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
- --bg:#F4EEDF; --bg2:#ECE2CE; --card:#FBF7EC;
- --ink:#2E2A24; --ink2:#6E655A; --faint:#A99E8C;
+ --bg:#FBF8F2; --bg2:#F3EEE3; --card:#FFFFFF;
+ --ink:#2E2A24; --ink2:#6E655A; --faint:#AEA495;
  --red:#C0533F; --red-d:#A5412E; --yellow:#E0AE3F; --ochre-d:#9A6E1E;
  --sage:#8C9E77; --blue:#7E93AB; --brown:#8A6A50;
- --line:#E1D6BF;
+ --line:#EAE2D3;
  --sans:'Inter',system-ui,-apple-system,sans-serif;
  --kr:'Pretendard Variable',Pretendard,system-ui,sans-serif;
  --hand:'Caveat',cursive;
@@ -44,7 +44,7 @@
 html{color-scheme:light;-webkit-text-size-adjust:100%;scroll-behavior:auto;scroll-padding-top:80px;overflow-x:hidden}
 body{font-family:var(--kr);color:var(--ink);background:var(--bg);line-height:1.72;word-break:keep-all;overflow-wrap:break-word;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:relative}
 /* 색연필/노이즈 그레인 */
-body::before{content:"";position:fixed;inset:0;z-index:2000;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
+body::before{content:"";position:fixed;inset:0;z-index:2000;pointer-events:none;opacity:.035;mix-blend-mode:multiply;
  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
@@ -78,7 +78,7 @@ h1,h2,h3{font-weight:700;line-height:1.18;letter-spacing:-.01em}
 .nav-lnk{display:flex;gap:26px}
 .nav-lnk a{font-family:var(--kr);font-size:.95rem;font-weight:500;color:var(--ink);opacity:.82;transition:color .2s,opacity .2s}
 .nav-lnk a:hover{color:var(--red);opacity:1}
-.hdr.scrolled{background:rgba(244,238,223,.94);border-bottom:1px solid var(--line)}
+.hdr.scrolled{background:rgba(251,248,242,.95);border-bottom:1px solid var(--line)}
 .burger{display:none;flex-direction:column;gap:5px;width:30px;height:30px;justify-content:center;align-items:center;background:none;border:0;cursor:pointer}
 .burger span{display:block;width:22px;height:2px;border-radius:2px;background:var(--ink);transition:.3s}
 .drawer{position:fixed;inset:0;z-index:70;background:var(--red);color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
@@ -265,7 +265,7 @@ footer a:focus-visible,.drawer a:focus-visible{outline-color:#fff}
     </div>
     <div class="hero-media">
       <span class="doodle hide-mo" style="right:-6px;top:-30px;width:52px;height:48px;color:var(--sage)" aria-hidden="true"><svg viewBox="0 0 40 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 42V18"/><path d="M20 24c-6 0-11-4-11-11 6 0 11 4 11 11z"/><path d="M20 20c5 0 9-3 9-9-5 0-9 3-9 9z"/></svg></span>
-      <div class="ph"><span class="tape"></span><img src="bimi-sp-hero.webp" alt="자연광이 드는 카페 비미 내부 — 식물과 디자이너 가구" fetchpriority="high"></div>
+      <div class="ph"><span class="tape"></span><img src="bimi-gw-hero.webp" alt="자연광이 드는 카페 비미 내부 — 식물과 디자이너 가구" fetchpriority="high"></div>
     </div>
   </div>
 </section>
@@ -352,15 +352,15 @@ footer a:focus-visible,.drawer a:focus-visible{outline-color:#fff}
       <p>Designer sensibility and natural light, woven into a Dongmyeong-dong mood. Quiet music, and the scent of fresh coffee.</p>
     </div>
     <div class="sgrid">
-      <figure class="c7 rw rv"><img src="bimi-sp-chairs.webp" alt="자연광이 드는 창가와 붉은 디자이너 체어" loading="lazy"></figure>
-      <figure class="c5 rt rv"><img src="bimi-sp-turntable.webp" alt="턴테이블과 꽃이 놓인 대리석 테이블" loading="lazy"></figure>
-      <figure class="c5 rt rv"><img src="bimi-ds-cakes.webp" alt="비미의 수제 케이크와 디저트" loading="lazy"></figure>
-      <figure class="c7 rw rv"><img src="bimi-sp-view.webp" alt="창밖으로 보이는 담장과 초록 풍경" loading="lazy"></figure>
-      <figure class="c4 rq rv"><img src="bimi-sp-door.webp" alt="KAFE BIMI 스테인드글라스 문" loading="lazy"></figure>
-      <figure class="c4 rq rv"><img src="bimi-ds-case.webp" alt="디저트 쇼케이스" loading="lazy"></figure>
-      <figure class="c4 rq rv"><img src="bimi-sp-terrace.webp" alt="나무 그늘이 드리운 야외 테라스 자리" loading="lazy"></figure>
-      <figure class="c6 rw rv"><img src="bimi-sp-store.webp" alt="카페 비미 외관" loading="lazy"></figure>
-      <figure class="c6 rw rv"><img src="bimi-ds-peach.webp" alt="복숭아를 올린 시그니처 디저트" loading="lazy"></figure>
+      <figure class="c7 rw rv"><img src="bimi-jj-window.webp" alt="전주점 — 창밖으로 보이는 한옥 돌담 풍경" loading="lazy"></figure>
+      <figure class="c5 rt rv"><img src="bimi-gw-shelf.webp" alt="광주점 — 오브제와 그릇이 놓인 선반" loading="lazy"></figure>
+      <figure class="c5 rt rv"><img src="bimi-jj-drip.webp" alt="전주점 — 핸드드립 커피를 내리는 모습" loading="lazy"></figure>
+      <figure class="c7 rw rv"><img src="bimi-gw-counter.webp" alt="광주점 — 바 카운터와 바리스타" loading="lazy"></figure>
+      <figure class="c4 rq rv"><img src="bimi-gw-object.webp" alt="손그림 같은 도자기 오브제" loading="lazy"></figure>
+      <figure class="c4 rq rv"><img src="bimi-jj-dessert.webp" alt="전주점 — 진열된 수제 디저트" loading="lazy"></figure>
+      <figure class="c4 rq rv"><img src="bimi-jj-chairs.webp" alt="전주점 — 컬러풀한 디자이너 체어" loading="lazy"></figure>
+      <figure class="c6 rw rv"><img src="bimi-gw-dessert.webp" alt="광주점 — 테이블 위 디저트와 음료" loading="lazy"></figure>
+      <figure class="c6 rw rv"><img src="bimi-jj-hero.webp" alt="전주점 — 토고 소파와 큰 식물이 있는 라운지" loading="lazy"></figure>
     </div>
   </div>
 </section>
@@ -375,7 +375,7 @@ footer a:focus-visible,.drawer a:focus-visible{outline-color:#fff}
     </div>
     <div class="loc-grid">
       <article class="loc rv">
-        <div class="loc-media"><img src="bimi-sp-store.webp" alt="카페 비미 광주 동명동 외관" loading="lazy"></div>
+        <div class="loc-media"><img src="bimi-gw-sign.webp" alt="카페 비미 광주 동명동 — 벽돌 외벽의 간판" loading="lazy"></div>
         <div class="loc-body">
           <div class="loc-name">Gwangju <span>광주 · 동명동</span></div>
           <div class="vrow"><div class="k">Address</div><div class="v">광주광역시 동구 동계로10번길 16, 1층<br><span class="sub">문화전당역 4번 출구에서 약 939m</span></div></div>
@@ -391,7 +391,7 @@ footer a:focus-visible,.drawer a:focus-visible{outline-color:#fff}
         </div>
       </article>
       <article class="loc rv">
-        <div class="loc-media loc-ph"><span>photo coming soon ✿</span></div>
+        <div class="loc-media"><img src="bimi-jj-exterior.webp" alt="카페 비미 전주 전라감영길 — 한옥 돌담 옆 외관" loading="lazy"></div>
         <div class="loc-body">
           <div class="loc-name">Jeonju <span>전주 · 전라감영길</span></div>
           <div class="vrow"><div class="k">Address</div><div class="v">전북 전주시 완산구 전라감영5길 12, 1층<br><span class="sub">전라감영·전주 한옥마을 인근</span></div></div>
